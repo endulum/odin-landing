@@ -21,12 +21,13 @@ section {
 }
 
 header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 30px;
   color: white;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.4);
+  padding-bottom: 25px;
 }
 
 .nav, .nav ul {
@@ -35,19 +36,28 @@ header {
 }
 
 .nav {
-  margin-top: 25px;
+  margin-top: 30px;
   justify-content: space-between;
 }
 
 .nav ul {
   list-style: none;
+  gap: 15px;
   margin: 0;
+}
+.nav ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.nav ul a:hover {
+  text-decoration: underline;
 }
 
 .hero {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 30px;
 }
 
 .left, .right {
@@ -60,10 +70,46 @@ header {
   font-size: 48px;
   line-height: 40px;
 }
+.left button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+}
+.left button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .right img {
   width: 100%;
   height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.info h2, .info p {
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.items div {
+  text-align: center;
+}
+.items div img {
+  width: 150px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 5px solid white;
