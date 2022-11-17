@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(/resources/tweed.jpeg);
+  background-image: url(resources/tweed.jpeg);
   background-repeat: repeat;
   background-attachment: fixed;
   margin: 0;
